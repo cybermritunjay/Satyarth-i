@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SATYARTH-I 2K17</title>
+  <meta name="description" content="college TechFest.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+    <link href="favicon.ico" rel="shortcut icon">
+
+  
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+		$(".abs").fadeOut("slow");
+	});
+</script>
+
+</head>
+<body>
+
+<!--audio-->
+<div style="position:fixed;width: auto; bottom: 0; left: 0; z-index: 9">
+        <a href="javascript:playPause();">
+            <i class="fa fa-pause" id="pl" style="font-size: 20px; color: #fff;" aria-hidden="true"></i>
+        </a>
+        <p id="texty">pause</p>
+    <audio id="player" autoplay loop style="position:fixed; width: auto; bottom: 0; left: 0; z-index: -99999999999999999999999999999;display:none">
+      <source src="img/channa.mp3"
+         type='audio/mp3'>
+      Your browser does not support the audio element.
+    </audio>
+</div>
+<script type="text/javascript">
+       function playPause() {
+       var song = document.getElementsByTagName('audio')[0];
+       var qwe = document.getElementById("pl");
+       var e = document.getElementById("texty");
+       if (song.paused){
+           song.play();
+           qwe.className = "fa fa-pause";
+           e.innerHTML = "pause";
+         }
+       else{
+           song.pause();
+           qwe.className = "fa fa-play";
+           e.innerHTML = "play";
+         }
+       }
+</script>
+
+<div class="abs" style="background-color: #2a2826; position: absolute; left:0; top:0; bottom: 0; right: 0; width: 100%;
+	z-index: 99999999999999999;">
+<div class="se-pre-con"></div>
+</div>
+<!-- particles.js container -->
+<div id="particles-js">
+	<section>
+		<img class="collegeName" src="img/collegeName.png" width="50%" height=" 120px" style="position:absolute; top: 0; padding: 10px; animation: faddy 5s ease-in 1;">
+		<img class="mainlogo" src="img/LOGO FINAL.png"  width="150px" height=" 100px" style="position:absolute; top: 0; right: 0; padding: 10px; ">
+	</section>
+	<div class="logo-text">
+		<p></p>
+		<h1>SATYARTH-I</h1>
+	</div>
+	<div class="date" style="position: absolute; top: 48%; left: 50%; margin-left: -52px;font-size: 20px;">
+		<h1 style="animation: floatty 1s ease-in infinite;">March 24-25</h1>
+	</div>
+	<span class="arrowdown">
+		<a href="w/t.html" onclick="magic()"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+	</span>
+</div>
+
+<div class="socialmedia">
+	<ul>
+		<li><a href="http://www.facebook.com/SATYARTH-I"><img class="fbanim animated 1 bounceIn" width='50px' height='50px' src="img/faceb.png"></a></li>
+		<li><a href="http://www.instagram.com/satyarth.i"><img class="instaanim animated 1 bounceIn" width='50px' height='50px' src="img/instagram.png"></a></li>
+		<li><a href="mailto:satyarth.i@gmail.com"><img class="mailanim animated 1 bounceIn" width='50px' height='50px' src="img/mail.png"></a></li>
+	</ul>
+</div>
+
+
+<div class="wrapper animated 1 bounceInUp" style="z-index: -999999999999;">
+    <div class="clock">
+        <div class="column days">
+            <div class="timer" id="days"></div>
+            <div class="text">DAYS</div>
+        </div>
+        <div class="timer days">:</div>
+        <div class="column">
+            <div class="timer" id="hours"></div>
+            <div class="text">HOURS</div>
+        </div>
+        <div class="timer">:</div>
+        <div class="column">
+            <div class="timer" id="minutes"></div>
+            <div class="text">MINUTES</div>
+        </div>
+        <div class="timer">:</div>
+        <div class="column">
+            <div class="timer" id="seconds"></div>
+            <div class="text">SECONDS</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script  src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
+<script type="text/javascript" src="timer.js"></script>
+
+<script>
+  $(window).scroll(function(){
+		var wScroll = $(this).scrollTop();
+		if(wScroll > $('.workshopclass').offset().top){
+			//console.log(wScroll);
+				$('.workshopclass').css({
+				    background-color: red;
+					background-image: url(../img/animate.gif);
+					background-size: cover;
+					background-repeat: no-repeat;
+					position: fixed;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+				});
+		}
+		
+  });
+</script>
+</body>
+</html>

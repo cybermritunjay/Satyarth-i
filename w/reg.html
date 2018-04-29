@@ -1,0 +1,257 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/src/al.css" /> 
+
+        <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/css/bootstrap.min.css">
+
+       
+
+         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
+
+        <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/css/bootstrap-material-design.min.css">
+        
+         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+         
+        <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/css/ripples.min.css">
+
+        <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/css/main.css">
+
+         <link rel="stylesheet" href="http://app.sinhgad.edu/neon/assets/css/status.css">
+  
+    <script src="http://app.sinhgad.edu/neon/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="http://app.sinhgad.edu/neon/assets/js/status.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="http://app.sinhgad.edu/neon/assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+         <script src="http://app.sinhgad.edu/neon/assets/js/jquery-ui.js"></script>
+
+        <script src="http://app.sinhgad.edu/neon/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="http://app.sinhgad.edu/neon/assets/js/vendor/material.min.js"></script>
+        <script src="http://app.sinhgad.edu/neon/assets/js/vendor/ripples.min.js"></script>
+        <script src="http://app.sinhgad.edu/neon/assets/js/vendor/jquery.matchHeight-min.js"></script>
+
+        <script src="http://app.sinhgad.edu/neon/assets/js/main.js"></script> 
+
+        <style>
+         #infoMessage
+            {
+              color : red;
+              font-size:small;
+              
+            }
+        </style>
+    
+      </head>
+    <body id="pa-body-login" >
+      
+
+<script type="text/javascript">
+function showfield(name){
+  //alert("hi");
+  if(name=='other')document.getElementById('div1').innerHTML='<input type="text"  value="" class="form-control" name="other" id="other" placeholder="Enter Your College Name"> ';
+  else document.getElementById('div1').innerHTML='';
+}
+</script>
+
+
+            
+           <!-- title message -->
+        <div class="container wrapper-title">           
+        </div>
+        <!-- end of : title message -->  
+    
+
+
+
+
+  <div class="container wrapper-dashboard-content">
+
+    <div class="row">
+      <div class="col-md-12">      
+        <h3 class="text-center" style="padding-top: 50px; padding-bottom: 50px;"> Registration for <span class="text-info">Satyarth-I</span></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" style="padding-bottom: 50px;">
+
+      <form  role="form" action='http://app.sinhgad.edu/neon/index.php/non_sin_form/submited' method="post">
+      
+      <div class="form-group row">
+        <label for="Student_Name" class="col-lg-4 control-label">Student Name <span style = "color:red">* </span></label>
+        <div class="col-lg-8">
+          <input type="text"  value="" class="form-control" name="student_name" id="student_name" placeholder="Student Name"> 
+          
+
+           <div id="infoMessage"></div>
+        </div>
+      </div>
+
+   <div class="form-group row">
+       <label for="Gender" class="col-lg-4 control-label">Gender <span style = "color:red">*</span></label>
+       <div class="col-lg-8">
+        <select id="gender" class="form-control" name = "gender">
+           <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+         <div id="infoMessage"></div>
+      </div>
+    </div>
+
+     <div class="form-group row">
+       <label for="Gender" class="col-lg-4 control-label">Year <span style = "color:red">*</span></label>
+       <div class="col-lg-8">
+        <select id="gender" class="form-control" name = "gender">
+           <option value="">Select Year</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+        </select>
+         <div id="infoMessage"></div>
+      </div>
+    </div>
+      
+       <div class="form-group row">
+       <label for="emp_code" class="col-lg-4 control-label">College <span style = "color:red">*</span></label>
+       <div class="col-lg-8">
+        <select id="college" class="form-control"  name = "college" onchange="showfield(this.options[this.selectedIndex].value)" >
+           <option selected="selected">Select College</option> 
+           <option value=">Bharati vidyapeeth Deemed University New Law College">Bharati vidyapeeth Deemed University New Law College</option>
+           <option value="Bharati Vidyapeeths College of Architecture - Katraj-Dhankawadi">Bharati Vidyapeeths College of Architecture - Katraj-Dhankawadi</option>
+           <option value="Bhivarabai Sawant College of Engineering and Research">Bhivarabai Sawant College of Engineering and Research</option>
+           <option value="Department of Management Sciences, Pune University">Department of Management Sciences, Pune University</option>
+           <option value="DES LAW COLLEGE">DES LAW COLLEGE</option>
+           <option value="Dr. D.Y. Patil Dental College and Hospital">Dr. D.Y. Patil Dental College and Hospital</option>
+           <option value="Dr. D.Y. Patil School of Engineering, Lohegaon">Dr. D.Y. Patil School of Engineering, Lohegaon</option>
+           <option value="Kaveri college of science and commerce">Kaveri college of science and commerce</option>
+           <option value="Maharashtra Institute of Technology-Paud Rd">Maharashtra Institute of Technology-Paud Rd</option>
+           <option value="Marathwada Mitra Mandal College of Architecture">Marathwada Mitra Mandal College of Architecture</option>
+           <option value="Marathwada Mitra Mandal&acute;s College of Commerce">Marathwada Mitra Mandal&acute;s College of Commerce</option>
+           <option value="Marathwada Mitra Mandals institute of Engineering">Marathwada Mitra Mandals institute of Engineering</option>
+           <option value="Modern College of Engineering">Modern College of Engineering</option>
+           <option value="Ness Wadia College of Commerce">Ness Wadia College of Commerce</option>
+           <option value="New law academy">New law academy</option>
+           <option value="Nowrojee Wadia College - for Arts and Science, Pune">Nowrojee Wadia College - for Arts and Science, Pune</option>
+           <option value="P.V.G.s College of Engineering and Technology-Vidyanagar, Pune">P.V.G.s College of Engineering and Technology-Vidyanagar, Pune</option>
+           <option value="Padmabhushan Dr. Vasantdada Patil College of Architecture">Padmabhushan Dr. Vasantdada Patil College of Architecture</option>
+           <option value="Pimpri chinchwad college of engineering">Pimpri chinchwad college of engineering</option>
+           <option value="Sankalp Business school, Vadgaon">Sankalp Business school, Vadgaon</option>
+           <option value="Symbiosis institute of design">Symbiosis institute of design</option>
+           <option value="Zeal education societys Dnyanganga college, Pune">Zeal education societys Dnyanganga college, Pune</option>
+           <option value="other">Other</option>;
+          </select>
+           <div id="infoMessage"></div>
+           <div id="div1"></div>
+      </div>
+     </div>
+
+        <div class="form-group row">
+        <label for="Contact Number" class="col-lg-4 control-label">Contact Number <span style = "color:red">*</span></label>
+        <div class="col-lg-8">
+          <input type="text"  value="" class="form-control" name="contact_number" id="contact_number" placeholder="Contact Number"> 
+           <div id="infoMessage"></div>
+        </div>
+       </div>
+
+
+        <div class="form-group row">
+        <label for="email" class="col-lg-4 control-label">Email Address <span style = "color:red">*</span></label>
+        <div class="col-lg-8">
+          <input type="text" value="" class="form-control" name="email" id="email" placeholder="Email Address"> 
+           <div id="infoMessage"></div>
+        </div>
+       </div>
+
+
+       <div class="form-group row">
+       <label for="emp_code" class="col-lg-4 control-label">Workshops <span style = "color:red">*</span></label>
+       <div class="col-lg-8">
+        <select id="event" class="form-control"  name="event">
+          <option value="">Select </option>
+          <option value="Solo Singing">Sherlock Of Coding</option>
+          <option value="Solo Dance">Codex</option>
+          <option value="Mr and Ms Sinhgad">Robo Soccer</option>
+          <option value="Duet Singing">Chemi-jet</option>
+          <option value="Fashion Show">Fashion Show</option>
+          <option value="Group Dance">Group Dance</option>
+          <option value="Stage Play">Stage Play</option>
+          <option value="Aegis of Rock">Aegis of Rock</option>
+        </select>
+          <div id="infoMessage"></div>
+       </div>
+     </div>
+
+     <div class="form-group row">
+        <label for="c_number" class="col-lg-4 control-label" >Events <span style = "color:red">*</span></label>
+        <div class="col-lg-8">
+        <input type="checkbox" name="Sherlock" value="game">Sherlock</input></br>
+        <input type="checkbox" name="Codex" value="gu">Codex</input></br>
+        <input type="checkbox" name="Sherlock" value="game">chemijet</input></br>
+        <input type="checkbox" name="Sherlock" value="game">RoboSoccer</input></br>
+        <input type="checkbox" name="Sherlock" value="game">Hackathon</input></br>
+        <input type="checkbox" name="Sherlock" value="game">bridge</input></br>
+        <input type="checkbox" name="Sherlock" value="game">Xyz</input></br>
+        </div>
+
+      <div class="form-group row">
+        <label for= "Co-ordinator Name" class="col-lg-4 control-label">Co-ordinator Name <span style = "color:red">*</span></label>
+        <div class="col-lg-8">
+          <input type="text" value="" class="form-control" class="form-control" name="c_name" id="c_name" placeholder="Co-ordinator Name"> 
+           <div id="infoMessage"></div>
+        </div>
+       </div>
+
+
+      <div class="form-group row">
+        <label for="c_number" class="col-lg-4 control-label" >Co-ordinator Contact Number <span style = "color:red">*</span></label>
+        <div class="col-lg-8">
+          <input type="text"  value="" class="form-control" name="c_contact" id="c_contact" placeholder="Co-ordinator Contact Number"> 
+           <div id="infoMessage"></div>
+        </div>
+       </div>
+
+        <div class="form-group row">
+        <label for="c_email" class="col-lg-4 control-label">Co-ordinator Email </label>
+        <div class="col-lg-8">
+          <input type="text" value=""  class="form-control" name="c_email" id="c_email" placeholder="Co-ordinator Email"> 
+          <div id="infoMessage"></div>
+        </div>
+       </div>
+       
+
+     
+
+      <div class="form-group row">
+        <div class="col-lg-12 text-right">
+          <button type="submit" id = "sub" class="btn btn-lg btn-raised btn-info">Register Me!</button>
+           <button type="reset"  class="btn btn-lg">Reset</button>
+        </div>
+      </div>
+
+
+      
+    </form>
+      </div>
+    </div>
+     
+   
+  </div>
+        <!-- end of : title message -->
+    
+        
+
